@@ -9,14 +9,18 @@ export const metadata: Metadata = {
   description: "Team Wanderlust from IIIT Hyderabad, India",
 };
 
-export default function RootLayout({
+export default function Layout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={inter.className + " flex flex-col w-full h-full overflow-hidden space-y-4"}
+      >
+        {children}
+      </body>
     </html>
   );
 }
