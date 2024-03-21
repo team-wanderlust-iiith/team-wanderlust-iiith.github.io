@@ -16,9 +16,7 @@ export default function Layout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={inter.className + " flex flex-col w-full h-full overflow-hidden space-y-4"}
-      >
+      <body className={inter.className + " flex flex-col flex-grow h-screen overflow-hidden"}>
         {children}
       </body>
     </html>

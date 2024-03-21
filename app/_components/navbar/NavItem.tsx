@@ -18,7 +18,7 @@ export default function NavItem({
 }) {
   const router = useRouter()
   const handleRouter = (route: string) => {
-    router.push(route)
+    router.replace(route)
   }
 
   return (
@@ -26,7 +26,7 @@ export default function NavItem({
       type="button"
       className="transition ease-in
       font-semibold text-md md:text-lg text-center capitalize
-      p-2 px-4 m-1 border-solid border-2 border-transparent rounded-lg
+      p-2 md:px-4 m-1 border-solid border-2 border-transparent rounded-lg
       hover:border-black hover:shadow-md md:rounded-full"
       onClick={link ? () => handleRouter(link) : undefined}
     >

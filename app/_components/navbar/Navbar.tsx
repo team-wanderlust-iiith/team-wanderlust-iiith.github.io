@@ -15,15 +15,15 @@ export default function NavBar({
   pages: string[],
   links: string[]
 }) {
-  const logoWidth = 200, lRatio = 30, wRatio = 9
+  const logoWidth = 200, lRatio = 12, wRatio = 3
   return (
     <div className="flex items-center justify-between p-2 px-4 shadow-md" id="nav-bar">
       {/* Logo and Title */}
       <div className="flex items-center" id="logo-title">
-        <Link href={"/home"}>
+        <Link href={"/home"} replace>
           <Image
             // className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-            src="/logo_wide.svg"
+            src="/wide.svg"
             alt="Team Wanderlust Logo"
             width={logoWidth}
             height={(logoWidth / lRatio) * wRatio}
